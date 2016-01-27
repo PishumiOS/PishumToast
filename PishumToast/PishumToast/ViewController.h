@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (strong,nonatomic)UIView *myView;
+
+- (IBAction)OnClicked:(UIButton *)sender;
+
 
 @end
 

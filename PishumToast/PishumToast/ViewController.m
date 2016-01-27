@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "PishumToast.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -14,14 +16,24 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [PishumToast showToastWithMessage:@"启动了。。。" Length:TOAST_MIDDLE ParentView:self.view];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+
+- (IBAction)OnClicked:(UIButton *)sender {
+    
+    [PishumToast showToastWithMessage:@"显示的内容" Length:TOAST_MIDDLE ParentView:self.view];
 }
 
 @end

@@ -13,6 +13,7 @@
 		D0748F581C5763950077DA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0748F561C5763950077DA36 /* Main.storyboard */; };
 		D0748F5A1C5763950077DA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0748F591C5763950077DA36 /* Assets.xcassets */; };
 		D0748F5D1C5763950077DA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0748F5B1C5763950077DA36 /* LaunchScreen.storyboard */; };
+		D0748F671C5768C00077DA36 /* PishumToast.m in Sources */ = {isa = PBXBuildFile; fileRef = D0748F661C5768C00077DA36 /* PishumToast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D0748F591C5763950077DA36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0748F5C1C5763950077DA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0748F5E1C5763950077DA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0748F651C5768C00077DA36 /* PishumToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PishumToast.h; sourceTree = "<group>"; };
+		D0748F661C5768C00077DA36 /* PishumToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PishumToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		D0748F4C1C5763950077DA36 /* PishumToast */ = {
 			isa = PBXGroup;
 			children = (
+				D0748F641C5768790077DA36 /* PishumToast */,
 				D0748F501C5763950077DA36 /* AppDelegate.h */,
 				D0748F511C5763950077DA36 /* AppDelegate.m */,
 				D0748F531C5763950077DA36 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				D0748F4E1C5763950077DA36 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0748F641C5768790077DA36 /* PishumToast */ = {
+			isa = PBXGroup;
+			children = (
+				D0748F651C5768C00077DA36 /* PishumToast.h */,
+				D0748F661C5768C00077DA36 /* PishumToast.m */,
+			);
+			name = PishumToast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				D0748F551C5763950077DA36 /* ViewController.m in Sources */,
 				D0748F521C5763950077DA36 /* AppDelegate.m in Sources */,
+				D0748F671C5768C00077DA36 /* PishumToast.m in Sources */,
 				D0748F4F1C5763950077DA36 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
