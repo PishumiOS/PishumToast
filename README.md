@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #PishumToast
 
 调用下面的方法
@@ -7,3 +8,7 @@
 效果如下：
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0127/111803_67551b90_634464.png "在这里输入图片标题")
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0127/111639_b6826c53_634464.png "在这里输入图片标题")
+=======
+# PishumToast
+This is show Toast like Android Toast,show the message to user
+>>>>>>> 89a32c4378428ad1bcaaeb20e15032d966e64b21
