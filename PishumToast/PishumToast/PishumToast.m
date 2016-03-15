@@ -7,7 +7,7 @@
 //
 
 #import "PishumToast.h"
-
+#define animateTimerLong 0.3
 @interface PishumToast ()
 
 @end
@@ -51,8 +51,12 @@ static UIView *parentView = nil;
     label.layer.cornerRadius=12.0f; //设置为图片宽度的一半出来为圆形
     label.layer.borderWidth=1.0f; //边框宽度
     label.layer.borderColor=[[UIColor grayColor] CGColor];//
-    
+    [label setAlpha:0.3];
     [view addSubview:label];
+    
+    [UIView animateWithDuration:animateTimerLong animations:^{
+        [label setAlpha:1.0];
+    }];
     
     CGFloat timerLong = 2.5f;
     
@@ -76,6 +80,17 @@ static UIView *parentView = nil;
 }
 
 + (void)TimerOver:(NSTimer*)sender{
+    UILabel *view = (UILabel*)[sender userInfo];
+    
+    [UIView animateWithDuration:animateTimerLong animations:^{
+        [view setAlpha:0.0];
+        
+    }];
+    
+    [NSTimer scheduledTimerWithTimeInterval:animateTimerLong target:self selector:@selector(RemoveSubView:) userInfo:view repeats:NO];
+}
+
++ (void)RemoveSubView:(NSTimer*)sender{
     UILabel *view = (UILabel*)[sender userInfo];
     [view removeFromSuperview];
 }
