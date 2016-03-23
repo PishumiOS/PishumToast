@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, TOAST_LENGTH) {
     TOAST_LONG = 3
 }NS_ENUM_AVAILABLE_IOS(6_0);
 
-+ (void)showToastWithMessage:(NSString*)mesage Length:(TOAST_LENGTH)length ParentView:(UIView*)view;
++ (void)showToastWithMessage:(NSString*)mesage Length:(TOAST_LENGTH)length;
 
 + (UIView*)ToastView;
 

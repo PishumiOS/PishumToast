@@ -22,10 +22,10 @@ static UIView *parentView = nil;
 }
 
 
-+ (void)showToastWithMessage:(NSString*)mesage Length:(TOAST_LENGTH)length ParentView:(UIView*)view
++ (void)showToastWithMessage:(NSString*)mesage Length:(TOAST_LENGTH)length
 {
     
-    CGRect rect = view.bounds;
+    CGRect rect = [UIApplication sharedApplication].keyWindow.bounds;
     rect.size.width = rect.size.width * (3.0/4.0);
     rect.size.height = 40;
     rect.origin.x = rect.size.width * (1.0/4.0);
@@ -38,8 +38,8 @@ static UIView *parentView = nil;
     label.backgroundColor = [UIColor darkGrayColor];
     label.textAlignment = NSTextAlignmentCenter;
     
-    CGPoint centerPoint =  view.center;
-    centerPoint.y = view.bounds.size.height - 50.0f;
+    CGPoint centerPoint =  [UIApplication sharedApplication].keyWindow.center;
+    centerPoint.y = [UIApplication sharedApplication].keyWindow.bounds.size.height - 50.0f;
     
     label.layer.cornerRadius = 5;
     label.layer.borderWidth = 4;
@@ -52,7 +52,8 @@ static UIView *parentView = nil;
     label.layer.borderWidth=1.0f; //边框宽度
     label.layer.borderColor=[[UIColor grayColor] CGColor];//
     [label setAlpha:0.3];
-    [view addSubview:label];
+//    [view addSubview:label];
+    [[UIApplication sharedApplication].keyWindow addSubview:label];
     
     [UIView animateWithDuration:animateTimerLong animations:^{
         [label setAlpha:1.0];

@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [PishumToast showToastWithMessage:@"启动了。。。" Length:TOAST_MIDDLE ParentView:self.view];
+    [PishumToast showToastWithMessage:@"启动了。。。" Length:TOAST_MIDDLE];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,7 +33,7 @@
 
 - (IBAction)OnClicked:(UIButton *)sender {
     
-    [PishumToast showToastWithMessage:@"显示的内容" Length:TOAST_MIDDLE ParentView:self.view];
+    [PishumToast showToastWithMessage:@"显示的内容" Length:TOAST_MIDDLE ];
 }
 
 @end
